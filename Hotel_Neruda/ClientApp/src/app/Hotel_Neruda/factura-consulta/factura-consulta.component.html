@@ -1,0 +1,55 @@
+<div class="col-6">
+    <h2>Consulta de facturas</h2>
+</div>
+<hr>
+<div class="row">    
+    <input [(ngModel)]="fS.searchText" type="text" class="formcontrol" placeholder="Filtrar por id">
+    <input [(ngModel)]="fS.sText" type="text" class="formcontrol" placeholder="Filtrar por cliente">
+</div>
+<hr>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Facturado</th>
+            <th scope="col">Reserva</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Habitacion</th>
+            <th scope="col">Subtotal</th>
+            <th scope="col">Iva (19%)</th>
+            <th scope="col">Total</th>
+            <th scope="col">Pdf</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of facturas|fcti:searchText; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ f.id }} </td>
+            <td>{{ f.fecha.toString().split("T")[0] }}</td>
+            <td>{{ f.reserva }}</td>
+            <td>{{ f._reserva._cliente.nombre1 }} {{ f._reserva._cliente.apellido1 }}</td>
+            <td>({{ f._reserva.habitacion }}) {{ f._reserva._habitacion.tipo }}</td>
+            <td>{{ f._reserva.base }}</td>
+            <td>{{ f._reserva.total - f._reserva.base }}</td>
+            <td>{{ f._reserva.total }}</td>
+            <td>
+                <button class="btn btn-primary" (click)="_fS.fct=f" routerLink="/factura">Save</button>
+            </td>
+        </tr>
+        <tr *ngIf="currentUser.tipo=='E'">
+            <th></th>
+            <td></td>
+            <td></td>
+            <td><b>Total</b></td>
+            <td></td>
+            <td></td>
+            <td><b>$ {{_fS.subtotal}}</b></td>
+            <td><b>$ {{_fS.total-_fS.subtotal}}</b></td>
+            <td><b>$ {{_fS.total}}</b></td>
+            <td>
+                <button class="btn btn-primary" (click)="_fS.fcts=facturas" routerLink="/reporte">Todo</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

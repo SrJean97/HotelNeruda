@@ -1,0 +1,48 @@
+<!--<nav class="navbar justify-content-center">
+  <ul class="nav nav-fill">
+    <li id="conBorde" class="nav-item">
+      <a class="nav-link" [routerLink]='["/"]'>Inicio</a>
+    </li>
+    <li id="conBorde" class="nav-item">
+      <a class="nav-link" [routerLink]="['/clienteRegistro']">Clientes</a>
+    </li>
+    <li id="conBorde" class="nav-item">
+      <a class="nav-link" [routerLink]="['/clienteConsulta']">Consulta cliente</a>
+    </li>
+    <li id="conBorde" class="nav-item">
+      <a class="nav-link" [routerLink]="['/habitacionRegistro']">Habitaciones</a>
+    </li>
+    <li id="conBorde" class="nav-item">
+      <a class="nav-link" [routerLink]="['/habitacionConsulta']">Consulta habitaciones</a>
+    </li>
+    <li id="conBorde" class="nav-item">
+      <a class="nav-link" [routerLink]="['/reservaConsulta']">Consultar Disponibilidad</a>
+    </li>
+  </ul>
+</nav>-->
+
+<nav class="navbar justify-content-center">
+  <ul class="nav">
+    <li><a routerLink="/home">Inicio</a></li>
+    <li *ngIf="currentUser.tipo=='E'"><a routerLink="/personaRegistro">Registros</a>
+      <ul *ngIf="currentUser.rol=='A'">
+        <li><a routerLink="/personaRegistro">Personas</a></li>
+        <li><a routerLink="/habitacionRegistro">Habitaciones</a></li>
+      </ul>
+    </li>
+    <li *ngIf="currentUser.tipo=='E'"><a routerLink="/personaConsulta">Consultas</a>
+      <ul>
+        <li><a routerLink="/personaConsulta">Personas</a></li>
+        <li><a routerLink="/habitacionConsulta">Habitaciones</a></li>        
+      </ul>
+    </li>
+    <li><a routerLink="/reservar">Reservaciones</a>
+      <ul>
+        <li><a routerLink="/reservar">Registrar</a></li>
+        <li><a routerLink="/reservaConsulta">Consultar</a></li>
+      </ul>
+    </li>
+    <li><a routerLink="/facturaConsulta">Facturas</a></li>
+    <li *ngIf="currentUser"><a (click)="cerrarSesion()">Salir</a></li>
+  </ul>
+</nav>

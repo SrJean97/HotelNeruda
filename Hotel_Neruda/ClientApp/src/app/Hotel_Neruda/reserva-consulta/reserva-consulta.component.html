@@ -1,0 +1,52 @@
+<div class="col-6">
+    <h2>Consulta de reservas</h2>
+</div>
+<hr>
+<div class="row">    
+    <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Filtrar por cliente y hab">
+</div>
+<hr>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Inicio</th>
+            <th scope="col">Final</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Habitacion</th>
+            <th *ngIf="currentUser.tipo=='E'" scope="col">CheckIn</th>
+            <th *ngIf="currentUser.tipo=='E'" scope="col">CheckOut</th>
+            <th scope="col">Base ($)</th>
+            <th scope="col">Total ($)</th>
+            <th *ngIf="currentUser.tipo=='E'" scope="col">Más</th>
+            <th scope="col">Remover</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of Reservas|reser:searchText; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ p.id }} </td>
+            <td>{{ p.inicio.toString().split("T")[0] }}</td>
+            <td>{{ p.final.toString().split("T")[0] }}</td>
+            <td>{{ p._cliente.nombre1 }} {{ p._cliente.apellido1 }}</td>
+            <td>{{ p.habitacion }}</td>
+            <td *ngIf="currentUser.tipo=='E'">                
+                <a *ngIf="!p.checkIn"  class="btn btn-primary" (click)="checkIn(p)">Check</a>
+                <p *ngIf="p.checkIn">{{ p.checkIn ? "Si" : "No" }}</p>
+            </td>
+            <td *ngIf="currentUser.tipo=='E'">
+                <a *ngIf="!p.checkOut" class="btn btn-success" (click)="checkOut(p)">Check</a>
+                <p *ngIf="p.checkOut">{{ p.checkOut ? "Si" : "No" }}</p>
+            </td>
+            <td>{{ p.base }}</td>
+            <td>{{ p.total }}</td>
+            <td *ngIf="currentUser.tipo=='E'">
+                <a class="btn btn-info" (click)="more(p)">+</a>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="delete(p)" *ngIf="validRemove(p)||currentUser.rol=='A'">-</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

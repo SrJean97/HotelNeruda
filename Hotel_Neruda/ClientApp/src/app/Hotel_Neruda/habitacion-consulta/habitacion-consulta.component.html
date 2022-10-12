@@ -1,0 +1,43 @@
+<div class="col-6">
+    <h2>Consulta de habitacion</h2>
+</div>
+<hr>
+<div class="row">    
+    <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Filtrar por id y nombre">
+</div>
+<hr>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Tipo </th>
+            <th scope="col">Habitacion #</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Piso #</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let habitacion of habitaciones|hab:searchText; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ habitacion.id }} </td>
+            <td>{{ habitacion.tipo }}</td>
+            <td>{{ habitacion.numero}}</td>
+            <td>{{ habitacion.precio}}</td>
+            <td>{{ habitacion.caracteristica }}</td>
+            <td>{{ habitacion.piso }}</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td>Reporte</td>
+            <td></td>
+            <td></td>
+            <td>
+                <button class="btn btn-primary" routerLink="/hab">Todo</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

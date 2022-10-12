@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro habitación</h2>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <h5><p>Tipo</p></h5>
+                    <select class="form-control" [(ngModel)]="habitacion.tipo" [ngModelOptions]="{standalone: true}">
+                        <option value="Simple">Simple</option> 
+                        <option value="Doble">Doble</option>
+                        <option value="Triple">Triple</option>
+                        <option value="Familiar">Familiar</option>
+                    </select>                     
+                </div>
+                <div class="form-group">
+                    <label>Numero de habitación</label>
+                    <input type="text" name="numero_Habitacio" [(ngModel)]="habitacion.numero"
+                        class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Precio de habitación</label>
+                    <input type="number" name="precio" [(ngModel)]="habitacion.precio" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Caracteristica</label>
+                    <input type="text" name="caracteristica" [(ngModel)]="habitacion.caracteristica"
+                        class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Numero de piso</label>
+                    <input type="number" name="numero_de_piso" [(ngModel)]="habitacion.piso"
+                        class="form-control" />
+                </div>
+                <hr>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

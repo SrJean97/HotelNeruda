@@ -1,0 +1,45 @@
+<div class="root">
+    <div class="head">
+        <div class="logo">
+            <div class="img">
+                <img src="../../assets/logoNerudaColor.png" alt="logoNeruda">
+            </div>
+        </div>
+        <h5>Hotel Neruda</h5>
+        <p>Calle 29 # 19A - 29 Sabanas, Valledupar, Cesar</p>
+        <p>3045517946 - 3053769474</p>
+        <p>Generado {{now.toLocaleString().split(" ")[0]}}</p>
+    </div>
+    <div class="title">        
+        <h4 class="m">Reporte de habitaciones</h4>
+        <p class="m">Por {{currentUser.nombre1}} {{currentUser.apellido1}}</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Id</th>
+                <th scope="col">Caracteristicas</th>
+                <th scope="col">Numero</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Reservas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let h of habs; index as i ">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ h.id }} </td>
+                <td>{{ h.caracteristica }}</td>
+                <td>{{ h.numero }}</td>
+                <td>{{ h.precio }}</td>
+                <td>{{ h.piso }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="burble ia lg"></div>
+    <div class="burble ib sm"></div>
+    <div class="burble rc sm"></div>
+    <div class="burble rb lg"></div>
+    <div class="burble cc lg"></div>
+    <div class="exit" routerLink="/habitacionConsulta">X</div>
+</div>

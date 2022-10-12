@@ -1,0 +1,80 @@
+<div class="root">
+    <div class="head">
+        <div class="logo">
+            <div class="img">
+                <img src="../../assets/logoNerudaColor.png" alt="logoNeruda">
+            </div>
+        </div>
+        <h5>Hotel Neruda</h5>
+        <p>Calle 29 # 19A - 29 Sabanas, Valledupar, Cesar</p>
+        <p>3045517946 - 3053769474</p>
+        <p>Facturado {{fS.fct.fecha.toString().split("T")[0]}}</p>
+    </div>
+    <div class="title">        
+        <h4 class="m">Factura {{fS.fct.id}}</h4>
+        <p class="m">De {{fS.fct._reserva._cliente.nombre1}} {{fS.fct._reserva._cliente.apellido1}} ({{fS.fct._reserva._cliente.id}})</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Reserva</th>
+                <th scope="col">Habitacion</th>
+                <th scope="col">Inicio</th>
+                <th scope="col">Final</th>
+                <th scope="col">Subtotal</th>
+                <th scope="col">Iva (19%)</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ f.reserva }}</td>
+                <td>{{ f._reserva.habitacion }}</td>
+                <td>{{ f._reserva.inicio.toString().split("T")[0] }}</td>
+                <td>{{ f._reserva.final.toString().split("T")[0] }}</td>
+                <td>{{ f._reserva.base }}</td>
+                <td>{{ f._reserva.total - f._reserva.base }}</td>
+                <td>{{ f._reserva.total }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><b>Total</b></td>
+                <td></td>
+                <td><b>$ {{f._reserva.base}}</b></td>
+                <td><b>$ {{f._reserva.total-f._reserva.base}}</b></td>
+                <td><b>$ {{f._reserva.total}}</b></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="title">        
+        <h4 class="m">Detalles</h4>
+        <p class="m">Habitación {{fS.fct._reserva.habitacion}}</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Numero</th>
+                <th scope="col">Piso</th>
+                <th scope="col">Caracteristica</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ f._reserva._habitacion.numero }}</td>
+                <td>{{ f._reserva._habitacion.piso }}</td>
+                <td>{{ f._reserva._habitacion.caracteristica }}</td>
+                <td>{{ f._reserva._habitacion.tipo }}</td>
+                <td>{{ f._reserva._habitacion.precio }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="burble ia lg"></div>
+    <div class="burble ib sm"></div>
+    <div class="burble rc sm"></div>
+    <div class="burble rb lg"></div>
+    <div class="burble cc lg"></div>
+    <div class="exit" routerLink="/facturaConsulta">X</div>
+</div>

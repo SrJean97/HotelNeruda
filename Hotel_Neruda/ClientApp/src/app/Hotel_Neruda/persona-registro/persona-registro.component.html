@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de {{persona.tipo=="C"?"cliente":"empleado"}}</h2>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <h5><p>Id</p></h5>
+                    <input type="text" name="identificacion" [(ngModel)]="persona.id" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <h5><p>Primer nombre</p></h5>
+                    <input type="text" name="primerNombre" [(ngModel)]="persona.nombre1" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <h5><p>Segundo nombre</p></h5>
+                    <input type="text" name="segundoNombre" [(ngModel)]="persona.nombre2" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <h5><p>Primer apellido</p></h5>
+                    <input type="text" name="primerApellido" [(ngModel)]="persona.apellido1" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <h5><p>Segundo apellido</p></h5>
+                    <input type="text" name="segundoApellido" [(ngModel)]="persona.apellido2" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <h5><p>Nacimiento</p></h5>
+                    <input type="date" name="edad" [(ngModel)]="persona.nacimiento" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <h5><p>Genero</p></h5>
+                    <select class="form-control" [(ngModel)]="persona.genero" [ngModelOptions]="{standalone: true}">
+                        <option value="F">Femenino</option> 
+                        <option value="M">Masculino</option>
+                    </select>                     
+                </div>
+
+                <div class="form-group">
+                    <h5><p>Telefono</p></h5>
+                    <input type="text" name="telefono" [(ngModel)]="persona.telefono" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <h5><p>Correo</p></h5>
+                    <input type="email" name="gmail" [(ngModel)]="persona.correo" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <h5><p>Direccion</p></h5>
+                    <input type="text" name="direccion" [(ngModel)]="persona.direccion" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <h5><p>Ciudad</p></h5>
+                    <input type="text" name="ciudad" [(ngModel)]="persona.ciudad" class="form-control" />
+                </div>
+
+                <div class="form-group" *ngIf="currentUser && currentUser.rol == 'A'">
+                    <h5><p>Tipo</p></h5>
+                    <select class="form-control" [(ngModel)]="persona.tipo" [ngModelOptions]="{standalone: true}">
+                        <option value="C">Cliente</option> 
+                        <option value="E">Empleado</option>
+                    </select>                     
+                </div>
+
+                <div class="form-group">
+                    <h5><p>Clave</p></h5>
+                    <input type="text" [(ngModel)]="persona.pass"  [ngModelOptions]="{standalone: true}" class="form-control" />
+                </div>
+                <hr>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Registrar</button>
+                    <button class="btn btn-secondary" routerLink="/" type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7d606b81-e60f-4040-8390-59ed39b7b716/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/Hotel-Neruda",
+    "appService.deploySubpath": "Hotel_Neruda\\publish"
+}

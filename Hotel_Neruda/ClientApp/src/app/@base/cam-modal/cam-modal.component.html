@@ -1,0 +1,68 @@
+<div class="card">
+    <div class="modal-header">
+        <div class="card-header card-header-primary" id="pruebaxd">
+            <h2 class="card-title modal-title heading text-center">{{title}}</h2>
+        </div>
+    </div>
+</div>
+<div class="modal-body">
+    <div class="row">        
+        <div class="col-md-8 offset-md-2">
+            <form>
+                <div class="form-group">
+                    <h5><p>Tipo {{hab.tipo}}</p></h5>
+                    <p>N° de personas {{max()}}</p>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <h5><p>Identificación</p></h5>
+                    <input type="text" name="inicio" [(ngModel)]="ced" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <h5><p>Nombre</p></h5>
+                    <input type="text" name="final" [(ngModel)]="nombre" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <h5><p>Tipo</p></h5>
+                    <select class="form-control" [(ngModel)]="tipo" [ngModelOptions]="{standalone: true}">
+                        <option value="N">Niño</option>
+                        <option value="A">Adulto</option> 
+                    </select>                                   
+                </div>
+                <hr>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()" *ngIf="!_add">Agregar</button>
+                    <button class="btn btn-warning mr-1" (click)="upgrade()" *ngIf="_add">Mejorar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <hr>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Cedula</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Quitar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of cams; index as i ">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ p.cedula }} </td>
+                <td>{{ p.nombre }}</td>
+                <td>{{ p.tipo == "N" ? "Niño" : "Adulto" }}</td>
+                <td><a class="btn btn-warning" (click)="remove(p)">-</a></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="save()">Guardar</button>
+</div>

@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="modal-header">
+        <div class="card-header card-header-primary" id="pruebaxd">
+            <h2 class="card-title modal-title heading text-center">{{title}}</h2>
+        </div>
+    </div>
+</div>
+<div class="modal-body">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Cedula</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of cams; index as i ">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ p.cedula }} </td>
+                <td>{{ p.nombre }}</td>
+                <td>{{ p.tipo == "N" ? "Niño" : "Adulto" }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Cerrar</button>
+</div>

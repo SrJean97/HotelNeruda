@@ -1,0 +1,108 @@
+F:\HotelNeruda-master\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+F:\HotelNeruda-master\Datos\bin\Debug\netstandard2.1\Datos.dll
+F:\HotelNeruda-master\Datos\bin\Debug\netstandard2.1\Datos.pdb
+F:\HotelNeruda-master\Datos\bin\Debug\netstandard2.1\Entidad.dll
+F:\HotelNeruda-master\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+F:\HotelNeruda-master\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+F:\HotelNeruda-master\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+F:\HotelNeruda-master\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+F:\HotelNeruda-master\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+F:\HotelNeruda-master\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+F:\HotelNeruda-master\Datos\obj\Debug\netstandard2.1\Datos.dll
+F:\HotelNeruda-master\Datos\obj\Debug\netstandard2.1\Datos.pdb
+C:\Users\anton\Desktop\neruda\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\anton\Desktop\neruda\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\anton\Desktop\neruda\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\anton\Desktop\neruda\Datos\bin\Debug\netstandard2.1\Entidad.dll
+C:\Users\anton\Desktop\neruda\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+C:\Users\anton\Desktop\neruda\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\anton\Desktop\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\anton\Desktop\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\anton\Desktop\neruda\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\anton\Desktop\neruda\Datos\obj\Debug\netstandard2.1\Datos.pdb
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\bin\Debug\netstandard2.1\Entidad.dll
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.pdb
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\bin\Debug\netstandard2.1\Entidad.dll
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\daant\OneDrive\Documents\UNIVERSIDAD\programacion web - 2\HotelLeandro\aaa1.1\neruda\Datos\obj\Debug\netstandard2.1\Datos.pdb
+C:\Users\anton\Desktop\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\anton\Desktop\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\anton\Desktop\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\anton\Desktop\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.pdb
+C:\Users\anton\Desktop\aaa\neruda\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\anton\Desktop\aaa\neruda\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\anton\Desktop\aaa\neruda\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\anton\Desktop\aaa\neruda\Datos\bin\Debug\netstandard2.1\Entidad.dll
+C:\Users\anton\Desktop\aaa\neruda\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+C:\Users\anton\Desktop\aaa\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\bin\Debug\netstandard2.1\Entidad.dll
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\jhean\OneDrive\Documentos\2020-2\BAJO WEB\PROYECTO DE AULA\neruda\Datos\obj\Debug\netstandard2.1\Datos.pdb
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Entidad.dll
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\developer\Documents\WebProjects\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.pdb
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Datos.dll
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Datos.pdb
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Entidad.dll
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.dll
+D:\Pack Prog Web\HotelWeb1\Neruda-Hotel\Datos\obj\Debug\netstandard2.1\Datos.pdb
+D:\Pack Prog Web\HotelWeb1\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+D:\Pack Prog Web\HotelWeb1\Datos\bin\Debug\netstandard2.1\Datos.dll
+D:\Pack Prog Web\HotelWeb1\Datos\bin\Debug\netstandard2.1\Datos.pdb
+D:\Pack Prog Web\HotelWeb1\Datos\bin\Debug\netstandard2.1\Entidad.dll
+D:\Pack Prog Web\HotelWeb1\Datos\bin\Debug\netstandard2.1\Entidad.pdb
+D:\Pack Prog Web\HotelWeb1\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+D:\Pack Prog Web\HotelWeb1\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+D:\Pack Prog Web\HotelWeb1\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+D:\Pack Prog Web\HotelWeb1\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+D:\Pack Prog Web\HotelWeb1\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+D:\Pack Prog Web\HotelWeb1\Datos\obj\Debug\netstandard2.1\Datos.dll
+D:\Pack Prog Web\HotelWeb1\Datos\obj\Debug\netstandard2.1\Datos.pdb

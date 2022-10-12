@@ -1,0 +1,38 @@
+<div class="col-6">
+    <h2>Consulta de personas</h2>
+</div>
+<hr>
+<div class="row">    
+    <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Filtrar por id y nombre">
+</div>
+<hr>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Nacimiento</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Tipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of Personas|persona:searchText; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ p.id }} </td>
+            <td>{{ p.nombre1 }} {{ p.nombre2 }} {{ p.apellido1 }} {{ p.apellido2 }}</td>
+            <td>{{ p.nacimiento.toString().split("T")[0] }}</td>
+            <td>{{ p.genero == "F" ? "Femenino" : "Masculino" }}</td>
+            <td>{{ p.telefono }}</td>
+            <td>{{ p.correo }}</td>
+            <td>{{ p.direccion }}</td>
+            <td>{{ p.ciudad }}</td>
+            <td>{{ p.tipo == "E" ? p.rol : p.tipo }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,36 @@
+<div class="container" style="padding-top: 20px; background-image: url('https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2016/12/21/1536/Hotel-du-Louvre-P077-Exterior-Night.jpg/Hotel-du-Louvre-P077-Exterior-Night.16x9.jpg');
+min-width: 100vw;
+min-height: 94vh;
+background-repeat: round;">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <h2>Ingreso</h2>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <h5><p>Usuario</p></h5>
+                    <input class="form-control" type="text" formControlName="user" required
+                    [ngClass]="{'is-invalid': form.controls.user.errors && error}"
+                    />
+                    <div *ngIf="form.controls.user.errors && submitted" class="invalid-feedback">
+                        <div *ngIf="form.controls.user.errors.required && submitted">Se require el usuario</div>
+                    </div>                        
+                </div>
+                <div class="form-group">
+                    <h5><p>Contraseña</p></h5>
+                    <input class="form-control" type="password" formControlName="pass" required
+                    [ngClass]="{'is-invalid': form.controls.pass.errors && error}"
+                    />
+                    <div *ngIf="form.controls.pass.errors && submitted" class="invalid-feedback">
+                        <div *ngIf="form.controls.pass.errors.required && submitted">Se require el contraseña</div>
+                    </div> 
+                </div>
+                <div class="form-group btns">
+                    <button class="btn btn-primary mr-1" [disabled]="loading"><span *ngIf="loading"
+                        class="spinner-border spinner-border-sm mr-1"></span> Ingresar</button>
+                    <div class="s"></div>
+                    <a routerLink="/personaRegistro">Registrarme</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="root">
+    <div class="head">
+        <div class="logo">
+            <div class="img">
+                <img src="../../assets/logoNerudaColor.png" alt="logoNeruda">
+            </div>
+        </div>
+        <h5>Hotel Neruda</h5>
+        <p>Calle 29 # 19A - 29 Sabanas, Valledupar, Cesar</p>
+        <p>3045517946 - 3053769474</p>
+        <p>Generado {{now.toLocaleString().split(" ")[0]}}</p>
+    </div>
+    <div class="title">        
+        <h4 class="m">Reporte</h4>
+        <p class="m">Por {{currentUser.nombre1}} {{currentUser.apellido1}}</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Id</th>
+                <th scope="col">Facturado</th>
+                <th scope="col">Reserva</th>
+                <th scope="col">Cliente</th>
+                <th scope="col">Habitacion</th>
+                <th scope="col">Subtotal</th>
+                <th scope="col">Iva (19%)</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let f of _fS.fcts; index as i ">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ f.id }} </td>
+                <td>{{ f.fecha.toString().split("T")[0] }}</td>
+                <td>{{ f.reserva }}</td>
+                <td>{{ f._reserva._cliente.nombre1 }} {{ f._reserva._cliente.apellido1 }}</td>
+                <td>({{ f._reserva.habitacion }}) {{ f._reserva._habitacion.tipo }}</td>
+                <td>{{ f._reserva.base }}</td>
+                <td>{{ f._reserva.total - f._reserva.base }}</td>
+                <td>{{ f._reserva.total }}</td>
+            </tr>
+            <tr *ngIf="currentUser.tipo=='E'">
+                <th></th>
+                <td></td>
+                <td></td>
+                <td><b>Total</b></td>
+                <td></td>
+                <td></td>
+                <td><b>$ {{_fS.subtotal}}</b></td>
+                <td><b>$ {{_fS.total-_fS.subtotal}}</b></td>
+                <td><b>$ {{_fS.total}}</b></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="burble ia lg"></div>
+    <div class="burble ib sm"></div>
+    <div class="burble rc sm"></div>
+    <div class="burble rb lg"></div>
+    <div class="burble cc lg"></div>
+    <div class="exit" routerLink="/facturaConsulta">X</div>
+</div>

@@ -1,0 +1,15 @@
+.cards{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 0 10px 10px 0;
+}
+
+.col{
+    min-width: 100%;
+}

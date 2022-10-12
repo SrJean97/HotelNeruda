@@ -1,0 +1,87 @@
+<div class="container">
+    <h2>Actualización de reserva</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="form-group" *ngIf="currentUser.tipo=='E'">
+                <h5><p>Cliente</p></h5>
+                <select class="form-control" [(ngModel)]="reserva.cliente" [ngModelOptions]="{standalone: true}" disabled>
+                    <option *ngFor="let obj of prns" value="{{obj.id}}">{{obj.id }} | {{obj.nombre1}} {{obj.apellido1}}</option> 
+                </select>                                   
+            </div>
+        </div>
+    </div>
+    <hr *ngIf="currentUser.tipo=='E'">
+    <div class="row">        
+        <div class="col-md-4 offset-md-1">
+            <form>
+                <div class="form-group">
+                    <h5><p>Inicio</p></h5>
+                    <input type="text" name="inicio" [(ngModel)]="reserva.inicio" class="form-control" disabled/>
+                </div>
+
+                <div class="form-group">
+                    <h5><p>Final</p></h5>
+                    <input type="text" name="final" [(ngModel)]="reserva.final" class="form-control" disabled/>
+                </div>
+
+                <hr>
+
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="buscar()">Buscar</button>
+                </div>
+            </form>
+
+        </div>
+        <!--COLUMNA 2-->
+        <div class="col-md-4 offset-md-2">          
+
+            <form>
+                
+                <div class="form-group">
+                    <h5><p>Subtotal</p></h5>
+                    <input type="number" name="subtotal" disabled="true" [(ngModel)]="reserva.base" class="form-control" />
+                </div>
+                
+                <div class="form-group">
+                    <h5><p>Total</p></h5>
+                    <input type="number" name="total" disabled="true" [(ngModel)]="reserva.total" class="form-control" />
+                </div>
+                
+                <hr>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="update()">Actualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">    
+    <div class="row">
+        <div class="col">
+            <!--DISPONIBLES-->
+            <form>
+                <h5>Disponible {{reserva.base}}</h5>
+                <hr>
+                <div class="cards">
+
+                    <div *ngFor="let obj of habs" class="card" style="width:300px">
+                        <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-s/08/55/ea/d3/standard-class.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">{{obj.tipo}}</h4>
+                            <p class="card-text">Piso {{obj.piso}} - Numero {{obj.numero}}</p>
+                            <p class="card-text">{{obj.caracteristica}}</p>
+                            <hr>
+                            <h6 class="card-text">Base ${{obj.precio}}</h6>
+                            <a class="btn btn-primary" (click)="select(obj)">Seleccionar</a>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
